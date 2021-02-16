@@ -11,9 +11,6 @@ frontend:
     baseDirectory: app
     files:
       - "**/*"
-  cache:
-    paths:
-      - node_modules/**/*
 test:
   artifacts:
     baseDirectory: cypress
