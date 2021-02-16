@@ -5,8 +5,6 @@ name: Cypress parallel tests
 
 on: push
 
-environment: cypress-parallel
-
 jobs:
   install:
     name: Install NPM and Cypress
@@ -76,6 +74,7 @@ jobs:
   test1:
     name: Cypress test 1
     runs-on: ubuntu-18.04
+    environment: cypress-parallel
     needs: install
     steps:
       - uses: actions/checkout@master
