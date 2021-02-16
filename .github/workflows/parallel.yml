@@ -5,6 +5,8 @@ name: Cypress parallel tests
 
 on: push
 
+environment: cypress-parallel
+
 jobs:
   install:
     name: Install NPM and Cypress
